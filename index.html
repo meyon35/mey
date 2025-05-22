@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY. | Modern Yazılımcı Portföyü</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=IBM+Plex+Mono:wght@400;700&family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="sticky-navbar">
+        <div class="modern-nav">
+            <div class="logo">MY.</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Anasayfa</a></li>
+                <li><a href="#projeler">Hizmetler</a></li>
+                <li><a href="#stack">Stack</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero" style="position:relative;overflow:hidden;">
+        <canvas id="hero-bg-canvas" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;"></canvas>
+        <div class="fun-terminal modern-terminal glass modern-term-ui" style="position:relative;z-index:2;">
+            <div class="fun-terminal-bar modern-term-bar">
+                <span class="term-logo">MY</span>
+                <span class="term-bar-icons">
+                    <span class="term-dot term-dot-green"></span>
+                    <span class="term-dot term-dot-yellow"></span>
+                    <span class="term-dot term-dot-red"></span>
+                </span>
+                <span class="fun-terminal-title modern-term-title">my@portfolio:~$</span>
+            </div>
+            <div class="fun-terminal-body modern-term-body">
+                <span class="fun-terminal-cursor modern-term-cursor">$</span>
+                <span id="autoTerminalText" class="fun-terminal-auto-text modern-term-auto-text"></span>
+            </div>
+            <div class="fun-terminal-info modern-term-info">Modern terminal. Otomatik içerik yazıyor...</div>
+        </div>
+        <h1 style="position:relative;z-index:2;">Dijital Dönüşüm Ortağınız. Akıllı Yazılım, Güçlü Marka, Yaratıcı Çözümler.</h1>
+        <p style="position:relative;z-index:2;">Web yazılım, dijital pazarlama ve grafik tasarımda <b>kurumsallıkla samimiyet</b> arasında, ultra modern ve mizahi bir portföy.</p>
+    </section>
+
+    <section id="projeler" style="margin-top: 64px;">
+        <h2 class="section-title">Hizmetler</h2>
+        <div class="projeler-grid">
+            <div class="proje-kart glitch-card">
+                <div class="proje-title">Web Yazılım</div>
+                <ul class="proje-detaylar">
+                    <li>Kurumsal Web Siteleri<br><small>Markanıza özel, hızlı ve güvenli web siteleri.</small></li>
+                    <li>E-Ticaret & CRM<br><small>Satış ve müşteri yönetimi için entegre çözümler.</small></li>
+                    <li>Landing Page<br><small>Kampanya ve ürün odaklı dönüşüm sayfaları.</small></li>
+                    <li>API & Otomasyon<br><small>İş süreçlerinizi hızlandıran özel yazılım entegrasyonları.</small></li>
+                </ul>
+            </div>
+            <div class="proje-kart glitch-card">
+                <div class="proje-title">Dijital Pazarlama</div>
+                <ul class="proje-detaylar">
+                    <li>SEO & Google Ads<br><small>Arama motorlarında üst sıralar ve etkili reklamlar.</small></li>
+                    <li>Sosyal Medya Yönetimi<br><small>Markanız için özgün ve etkileşimli sosyal medya içerikleri.</small></li>
+                    <li>İçerik Pazarlama<br><small>Hedef kitlenize uygun, değerli içerik üretimi.</small></li>
+                    <li>Analiz & Raporlama<br><small>Veriye dayalı strateji ve performans takibi.</small></li>
+                </ul>
+            </div>
+            <div class="proje-kart glitch-card">
+                <div class="proje-title">Grafik Tasarım</div>
+                <ul class="proje-detaylar">
+                    <li>Logo & Kurumsal Kimlik<br><small>Markanızı yansıtan özgün logo ve kimlik tasarımları.</small></li>
+                    <li>Sosyal Medya Tasarımları<br><small>Dijital platformlara uygun, dikkat çekici görseller.</small></li>
+                    <li>UI/UX & Banner<br><small>Kullanıcı dostu arayüzler ve etkili bannerlar.</small></li>
+                    <li>Sunum & Broşür<br><small>Profesyonel sunum ve tanıtım materyalleri.</small></li>
+                </ul>
+            </div>
+            <div class="proje-kart glitch-card">
+                <div class="proje-title">Mobil Uygulama</div>
+                <ul class="proje-detaylar">
+                    <li>iOS & Android<br><small>Tüm cihazlara uygun, performanslı mobil uygulamalar.</small></li>
+                    <li>Flutter & React Native<br><small>Tek kod tabanıyla çoklu platform desteği.</small></li>
+                    <li>UI/UX Mobil<br><small>Kullanıcı deneyimi odaklı mobil arayüzler.</small></li>
+                    <li>Yayın & Destek<br><small>App Store/Google Play yayını ve sürekli destek.</small></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="stack" style="margin-top: 64px;">
+        <h2 class="section-title">Stack</h2>
+        <div class="stack-icons">
+            <div class="stack-icon" title="HTML5">
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="38" height="38" rx="8" fill="#E44D26"/>
+                  <text x="7" y="28" font-size="16" fill="#fff" font-family="Poppins, sans-serif">HTML</text>
+                </svg>
+            </div>
+            <div class="stack-icon" title="CSS3">
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="38" height="38" rx="8" fill="#1572B6"/>
+                  <text x="10" y="28" font-size="16" fill="#fff" font-family="Poppins, sans-serif">CSS</text>
+                </svg>
+            </div>
+            <div class="stack-icon" title="JavaScript">
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="38" height="38" rx="8" fill="#F7DF1E"/>
+                  <text x="4" y="28" font-size="16" fill="#23272e" font-family="Poppins, sans-serif">JS</text>
+                </svg>
+            </div>
+            <div class="stack-icon" title="Figma">
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="38" height="38" rx="8" fill="#0ACF83"/>
+                  <text x="4" y="28" font-size="16" fill="#fff" font-family="Poppins, sans-serif">Figma</text>
+                </svg>
+            </div>
+            <div class="stack-icon" title="Photoshop">
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="38" height="38" rx="8" fill="#001E36"/>
+                  <text x="2" y="28" font-size="16" fill="#00C8FF" font-family="Poppins, sans-serif">PS</text>
+                </svg>
+            </div>
+            <div class="stack-icon" title="Google Ads">
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="38" height="38" rx="8" fill="#4285F4"/>
+                  <text x="2" y="28" font-size="16" fill="#fff" font-family="Poppins, sans-serif">Ads</text>
+                </svg>
+            </div>
+            <div class="stack-icon" title="SEO">
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="38" height="38" rx="8" fill="#ff9800"/>
+                  <text x="6" y="28" font-size="16" fill="#23272e" font-family="Poppins, sans-serif">SEO</text>
+                </svg>
+            </div>
+            <div class="stack-icon" title="AI">
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="38" height="38" rx="8" fill="#8e24aa"/>
+                  <text x="10" y="28" font-size="16" fill="#fff" font-family="Poppins, sans-serif">AI</text>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section id="iletisim" style="margin-top: 64px;">
+        <h2 class="section-title">İletişim</h2>
+        <div class="contact-container">
+            <div class="contact-info" style="text-align:center;">
+                <div class="logo" style="font-size:2.2rem; color:#ff9800; margin-bottom:1.2rem;">MY</div>
+                <p style="color:#f3f3f3; font-size:1.1rem; margin-bottom:1.2rem;">İletişim için: <br> <b>info@my.com</b></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content" style="display:flex; flex-direction:column; align-items:center; gap:0.7rem;">
+            <div class="logo" style="font-size:1.7rem; color:#ff9800; font-weight:800;">MY</div>
+            <div class="footer-text" style="color:#f3f3f3; font-size:1.05rem;">info@my.com</div>
+            <div class="footer-text" style="color:#ff9800; font-size:1.05rem;">&copy; <span id="year"></span> MY. Ultra Modern Portfolio</div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
