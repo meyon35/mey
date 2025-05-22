@@ -11,6 +11,9 @@
     <nav class="sticky-navbar">
         <div class="modern-nav">
             <div class="logo">MY.</div>
+            <button class="mobile-menu-toggle" aria-label="Menüyü Aç/Kapat">
+                <span class="hamburger"></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="#hero">Anasayfa</a></li>
                 <li><a href="#projeler">Hizmetler</a></li>
@@ -157,5 +160,21 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+    // Mobil menü aç/kapat
+    const menuBtn = document.querySelector('.mobile-menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        menuBtn.classList.toggle('open');
+    });
+    // Menüden bir linke tıklanınca menüyü kapat
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            menuBtn.classList.remove('open');
+        });
+    });
+    </script>
 </body>
 </html> 
